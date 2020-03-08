@@ -18,7 +18,7 @@
 <pre>	
 ORDER MODE        :  <form:radiobutton path="orderMode" value="Sale"/>Sale
 
-                     <form:radiobutton path="orderMode" value="Sale"/> Purchase   
+                     <form:radiobutton path="orderMode" value="Purchase"/>Purchase   
 			
 			
 ORDER CODE        :	 <form:input path="orderCode"/>

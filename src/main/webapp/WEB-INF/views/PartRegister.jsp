@@ -114,14 +114,25 @@
 
 					<div class="row">
 						<div class="col-4">
-							<label for="uomOb">SALE</label>
+							<label for="omSaleOb">SALE</label>
 						</div>
 						<div class="col-4">
 							<form:select path="omSaleOb.orderId" class="form-control">
 								<form:option value="">-SELECT-</form:option>
 								<form:options items="${omSaleMap}" />
 							</form:select>
-
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-4">
+							<label for="omPurchaseOb">PURCHASE</label>
+						</div>
+						<div class="col-4">
+							<form:select path="omPurchaseOb.orderId" class="form-control">
+								<form:option value="">-SELECT-</form:option>
+								<form:options items="${omPurchaseMap}" />
+							</form:select>
 						</div>
 					</div>
 

@@ -39,9 +39,19 @@ public class Part {
 	@ManyToOne
 	@JoinColumn(name="orderSaleIdFk")
 	private OrderMethod omSaleOb; //HAS-A
+	
+	@ManyToOne
+	@JoinColumn(name="orderPurchaseIdFk")
+	private OrderMethod omPurchaseOb; //HAS-A
+
 
 	public Part() {
 		super();
+	}
+
+	public Part(Integer id) {
+		super();
+		this.id = id;
 	}
 
 	public Integer getId() {
@@ -124,20 +134,21 @@ public class Part {
 		this.omSaleOb = omSaleOb;
 	}
 
-	public Part(Integer id) {
-		super();
-		this.id = id;
+	public OrderMethod getOmPurchaseOb() {
+		return omPurchaseOb;
+	}
+
+	public void setOmPurchaseOb(OrderMethod omPurchaseOb) {
+		this.omPurchaseOb = omPurchaseOb;
 	}
 
 	@Override
 	public String toString() {
 		return "Part [id=" + id + ", partCode=" + partCode + ", partLen=" + partLen + ", partWid=" + partWid
 				+ ", partHgt=" + partHgt + ", baseCost=" + baseCost + ", baseCurrency=" + baseCurrency + ", note="
-				+ note + ", uomOb=" + uomOb + ", omSaleOb=" + omSaleOb + "]";
+				+ note + ", uomOb=" + uomOb + ", omSaleOb=" + omSaleOb + ", omPurchaseOb=" + omPurchaseOb + "]";
 	}
 
 	
-
-
-
+	
 }

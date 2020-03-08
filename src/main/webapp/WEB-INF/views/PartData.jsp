@@ -87,7 +87,8 @@
 								<th>CURRENCY</th>
 								<th>NOTE</th>
 								<th>UOMIDFK</th>
-								<th>OMIDFK</th>
+								<th>orderSaleIdFk</th>
+								<th>orderPurchaseIdFk</th>
 							<!-- 	<th colspan="3">OPERATIONS</th> -->
 							</tr>
 							
@@ -104,6 +105,7 @@
 									<td>${ob.note}</td>
 									<td>${ob.uomOb.uomModel}</td>
 									<td><c:out value="${ob.omSaleOb.orderCode}" /></td>
+									<td><c:out value="${ob.omPurchaseOb.orderCode}" /></td>
 							
 								</tr>
 							</c:forEach>
